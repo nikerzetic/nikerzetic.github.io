@@ -29,6 +29,7 @@
     <h2>Sposobnosti in spretnosti</h2>
     {{ range $programmingLanguage := .Site.Data.skills.programming_languages }}
         {{ $programmingLanguage.title }}
+        <progress class="progress" value="{{ $programmingLanguage.confidence }}" max="100"></progress>
     {{ end }}
 </section>
 

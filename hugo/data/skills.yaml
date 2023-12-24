@@ -1,10 +1,10 @@
 programming_languages:
 - title: Python
-  confidence: 80
+  confidence: 87
 - title: Agda
   confidence: 95
 - title: Matlab
-  confidence: 85
+  confidence: 97
 - title: R
   confidence: 75
 - title: C++

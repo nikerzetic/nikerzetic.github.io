@@ -3,5 +3,13 @@
 
 {{ $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
 {{ with resources.Get "sass/mystyle.scss" | toCSS $opts | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
+
+{{ with resources.Get "js/navbar-toggler.js" }}
+  {{ with . | js.Build }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+{{ end }}
+
+<script src="https://kit.fontawesome.com/73fe057f19.js" crossorigin="anonymous"></script>
