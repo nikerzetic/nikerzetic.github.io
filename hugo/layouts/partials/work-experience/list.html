@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main>
+  <article>
+    <header>
+      <h1>{{ .Title }}</h1>
+    </header>
+    {{ .Content }}
+  </article>
+    {{ range .Pages }}
+      {{ partial "work-experience/card" . }}
+    {{ end }}
+</main>
+{{ end }}

@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<section id="homepage-education-block" class="section">
+    <h2>Izobrazba</h2>
+    {{ range $degree := .Site.Data.education }}
+        {{ partial "education/card" $degree }}
+    {{ end }}
+</section>
+
+<section id="homepage-work-experience-block" class="section">
+    <h2>Delovne izkušnje</h2>
+    {{ range $work := .Site.Data.work_experience }}
+        {{ partial "work-experience/card" $work }}
+    {{ end }}
+</section>
+
+<section id="homepage-accomplishments-block" class="section">
+    <h2>Dosežki</h2>
+</section>
+
+<section id="homepage-free-time-block" class="section">
+    <h2>Prosti čas</h2>
+    {{ range $activity := .Site.Data.free_time }}
+        {{ $activity.title }}
+    {{ end }}
+</section>
+
+<section id="homepage-skills-block" class="section">
+    <h2>Sposobnosti in spretnosti</h2>
+    {{ range $programmingLanguage := .Site.Data.skills.programming_languages }}
+        {{ $programmingLanguage.title }}
+    {{ end }}
+</section>
+
+{{ end }}
