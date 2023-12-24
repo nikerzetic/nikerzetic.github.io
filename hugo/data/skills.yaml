@@ -1,0 +1,37 @@
+programming_languages:
+- title: Python
+  confidence: 80
+- title: Agda
+  confidence: 95
+- title: Matlab
+  confidence: 85
+- title: R
+  confidence: 75
+- title: C++
+  confidence: 30
+- title: HTML
+  confidence: 80
+- title: SQL
+  confidence: 30
+- title: Java
+  confidence: 30
+- title: OCaml
+  confidence: 20
+tools:
+- title: Git
+  confidence: 70
+- title: LaTeX
+  confidence: 100
+- title: Visual Studio Code
+  confidence: 60
+- title: Django
+  confidence: 65
+languages:
+- title: Slovenščina
+  confidence: 100
+- title: English
+  confidence: 97
+- title: Deutsch
+  confidence: 30
+- title: Italiano
+  confidence: 15
