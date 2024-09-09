@@ -1,7 +1,20 @@
 <footer class="footer has-background-dark has-text-light">
   <div class="content has-text-centered">
-    <p>
-      Footer
+    <p id="footer-outside-links" class="block">
+      <a id="footer-github-link" class="button is-ghost has-text-white" href="{{ $.Site.Params.github }}">
+        <span class="icon">
+          <i class="fas fa-brands fa-github"></i>
+        </span>
+      </a>
+      
+      <a id="footer-linkedin-link" class="button is-ghost has-text-white" href="{{ .Site.Params.linkedin }}">
+        <span class="icon">
+          <i class="fas fa-brands fa-linkedin"></i>
+        </span>
+      </a>
+    </p>
+    <p class="block">
+      {{ .Site.Copyright }}
     </p>
   </div>
 </footer>

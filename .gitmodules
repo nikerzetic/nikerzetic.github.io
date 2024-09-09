@@ -1,3 +1,6 @@
 [submodule "bulma"]
 	path = bulma
 	url = git@github.com:jgthms/bulma.git
+[submodule "bulma-tooltip"]
+	path = bulma-tooltip
+	url = git@github.com:Wikiki/bulma-tooltip.git

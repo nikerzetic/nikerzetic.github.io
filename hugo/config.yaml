@@ -1,0 +1,10 @@
+baseURL: http://nikerzetic.com/
+languageCode: en-us
+title: Nik Erzetic
+
+copyright: © 2024 Nik Erzetič
+
+params:
+  github: https://github.com/nikerzetic
+  linkedin:  https://www.linkedin.com/in/nik-erzetic-158b7318a/
+

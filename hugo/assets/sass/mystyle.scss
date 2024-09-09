@@ -24,9 +24,15 @@ body {
 }
 
 #homepage-hero-banner {
-  background-image: url("/hugo/assets/images/landscape_banner.jpg");
+  background-image: url("/images/landscape_banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#footer-outside-links {
+  .button {
+    text-decoration: none;
+  }
 }
 
 // Set your brand colors
@@ -87,4 +93,4 @@ $input-shadow: none;
 
 // Bulma extensions
 $tooltip-font-size: $size-6;
-@import "../../../bulma/extensions/bulma-tooltip-master/src/sass/index.sass";
+@import "../../../bulma-tooltip/src/sass/index.sass";

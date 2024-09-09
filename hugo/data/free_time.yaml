@@ -5,21 +5,24 @@
 - title: Sprehajanje
   id: sprehajanje
   description: Vsak večer grem na sprehod in pri tem poslušam podcaste ali avdioknjige.
-- title: Karate
-  id: karate
-  description: Tekom gimnazije sem redno treniral karate (Shotokan in pozneje Fudokan). Dosegel sem 3. kyu oziroma rjavi pas.
 - title: Šivanje
   id: sivanje
   description: Rad imam različne ročne spretnosti. Ena zadjih, ki sem jo razvil je šivanje. Mojo garderobo sestavlja 31 metuljčkov, ki sem jih vse sam sešil – nekatere izmed njih v celoti ročno, brez uporabe šivalnega stroja.
 - title: DnD
   id: dnd
-  description: 
+  description: Za igro Dungeons and Dragons sem prvič slišal v srednji šoli in takoj sem jo vzljubil. Ob gledanju YouTube posnetkov serije Critical Role sem se naučil pravil. Po tem sem organiziral in tri leta (64 srečanj) vodil igro v svetu, ki sem ga sam ustvaril. Z veseljem izrabim vsako priložnost, da se pridružim igri DnD. Se je pa moj interes razširil še na druge igre.
 - title: Umetnost
   id: umetnost
-  description: Že kot otrok sem rad risal; včasih sem ustavil risanke na določenem prizoru, da narisal lik, ki sem ga videl na zaslonu. Od takrat sem razširil svoj interes na še mnoge druge tehnike - akvarel, olje, linotisk, modeliranje s polimerno maso in še mnoge drugue.
+  description: Umetnost je še ena od dejavnosti, s katero se že od otroštva rad ukvarjam; včasih sem ustavil risanke na določenem prizoru, da sem narisal lik, ki sem ga videl na zaslonu. Od takrat sem razširil svoj interes na še mnoge druge tehnike - akvarel, olje, linotisk, modeliranje s polimerno maso in še mnoge druge.
+- title: Barvanje minifiguric
+  id: barvanje-minifiguric
+  description: Čeprav najnovejši izmed umetniških hobijev, je zelo hitro postal eden izmed glavnih. Združuje veščine iz mnogih drugih področji ustvarjanja - prve figurice sem kupil, ko sem spoznal, da zanje lahko uporabim akrilne barve, ki sem jih že nekoč prej kupil. Sedaj moja zbirka figuric vztrarjno raste.
 - title: Miniature wargamming
   id: miniature-wargamming
-  description: 
+  description: Neizbežno je bilo, da me bo barvanje minifiguric privedlo do družabnih iger, ki simulirajo vojskovanje z njimi. Najpogosteje igram po pravilih One page rules, udeležen pa sem bil tudi že v igrah Warhammer 40000 in Age of Sigmar.
 - title: Računalniške igre
   id: racunalniske-igre
-  description: 
+  description: S svojo prvo računalniško igro sem se srečal že v vrtcu (Kljunkov svet - igra za učenje angleščine). Ena izmed prvih pravih računalniških iger je bila Age of Empires, a mojo ljuubezen do hobija je zacementirala igra GTA San Andreas. Dosti časa sem preživel s serijo iger Total War in različnimi LEGO igrami. Posebej moram izpostaviti še igri Skyrim in Minecraft; prva me je očaral z možnostmi ustvarjanja zgodb, druga pa kot še en - arhitekturni - aspekt ustvarjanja.
+- title: Karate
+  id: karate
+  description: Tekom gimnazije sem redno treniral karate (Shotokan in pozneje Fudokan). Dosegel sem 3. kyu oziroma rjavi pas.
