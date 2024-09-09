@@ -9,10 +9,12 @@
     {{ partialCached "meta" . }}
 </head> 
 
-<body class="">
+<body>
     {{ partial "navbar" . }}
 
+    {{/*  <div class="column is-8-desktop is-offset-2-desktop">  */}}
     {{ block "main" . }}{{ end }}
+    {{/*  </div>  */}}
 
     {{ partialCached "footer" . }}
 </body>

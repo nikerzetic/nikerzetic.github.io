@@ -1,12 +1,12 @@
 <div id="{{ .id }}-card" class="card block">
     <div class="card-content">
-        <p class="title">{{ .title }}</p>
+        <h3 class="title is-3">{{ .title }}</h3>
         <p class="subtitle">{{ .employer }}</p>
     </div>
     <div class="card-content">
         <div class="columns">
             <div class="column is-one-fifth">{{ .from }} - {{ .to }}</div>
-            <div class="column">{{ .description }}</div>
+            <div class="column has-text-justified">{{ .description }}</div>
         </div>
     </div>
 </div>

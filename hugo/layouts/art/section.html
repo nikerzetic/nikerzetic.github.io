@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+{{range $miniature := .Site.Data.art.miniatures }}
+
+<figure class="image">
+    <img class="" src="{{ $miniature.href }}" alt="{{ $miniature.alt }}">
+</figure>
+
+{{end}}
+
+{{ end }}

@@ -1,0 +1,22 @@
+<div class="card-content">
+    <div class="columns">
+        {{ $length := . | len }}
+        <div class="column is-one-half">
+            {{ range $index, $skill := . }}
+            {{ if (lt (mul 2 $index) $length )}}
+            {{ $skill.title }}
+            <progress class="progress" value="{{ $skill.confidence }}" max="100"></progress>
+            {{ end }}
+            {{ end }}
+        </div>
+
+        <div class="column">
+            {{ range $index, $skill := . }}
+            {{ if (ge (mul 2 $index) $length )}}
+            {{ $skill.title }}
+            <progress class="progress" value="{{ $skill.confidence }}" max="100"></progress>
+            {{ end }}
+            {{ end }}                    
+        </div>
+    </div>
+</div>

@@ -1,36 +1,106 @@
 {{ define "main" }}
 
-<section id="homepage-education-block" class="section">
-    <h2>Izobrazba</h2>
-    {{ range $degree := .Site.Data.education }}
-        {{ partial "education/card" $degree }}
-    {{ end }}
+<section id="homepage-hero-banner" class="hero is-info is-fullheight">
+    <div class="hero-body">
+        <div class="container block">
+            <div class="columns is-centered">
+                <div class="column is-2-tablet has-text-right has-background-primary">
+                    <h1 class="title is-1">Nik Erzetič</h1>
+                    <p class="subtitle">Filozof in umetnik po duši, matematik po izobrazbi.</p>
+                </div>
+                <div class="column is-2-tablet has-background-primary">
+                    <figure class="image is-128x128">
+                        {{ with resources.Get "images/portrait_me.jpg" }}
+                        <img class="is-rounded" src="{{ .RelPermalink }}" alt="A portrait of me." />
+                        {{ end }}
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="homepage-work-experience-block" class="section">
-    <h2>Delovne izkušnje</h2>
-    {{ range $work := .Site.Data.work_experience }}
-        {{ partial "work-experience/card" $work }}
-    {{ end }}
-</section>
+<div class="columns">
+    <div class="column is-10-desktop is-offset-1-desktop">
+        <section id="homepage-education-block" class="section">
+            <div class="hero is-small is-primary block">
+                <div class="hero-body">
+                    <h2 class="title is-2">Izobrazba</h2>
+                </div>
+            </div>
+            {{ range $degree := .Site.Data.education }}
+            {{ partial "education/card" $degree }}
+            {{ end }}
+        </section>
 
-<section id="homepage-accomplishments-block" class="section">
-    <h2>Dosežki</h2>
-</section>
+        <section id="homepage-work-experience-block" class="section">
+            <div class="hero is-small is-primary block">
+                <div class="hero-body">
+                    <h2 class="title is-2">Delovne izkušnje</h2>
+                </div>
+            </div>
+            {{ range $work := .Site.Data.work_experience }}
+            {{ partial "work-experience/card" $work }}
+            {{ end }}
+        </section>
 
-<section id="homepage-free-time-block" class="section">
-    <h2>Prosti čas</h2>
-    {{ range $activity := .Site.Data.free_time }}
-        {{ $activity.title }}
-    {{ end }}
-</section>
+        <section id="homepage-accomplishments-block" class="section">
+            <div id="homepage-accomplishments-hero" class="hero is-small is-primary block">
+                <div class="hero-body">
+                    <h2 class="title is-2">Dosežki</h2>
+                </div>
+            </div>
+            {{ range $accomplishment := .Site.Data.accomplishments }}
+            {{ partial "accomplishments/card" $accomplishment }}
+            {{ end }}
+        </section>
 
-<section id="homepage-skills-block" class="section">
-    <h2>Sposobnosti in spretnosti</h2>
-    {{ range $programmingLanguage := .Site.Data.skills.programming_languages }}
-        {{ $programmingLanguage.title }}
-        <progress class="progress" value="{{ $programmingLanguage.confidence }}" max="100"></progress>
-    {{ end }}
-</section>
+        <section id="homepage-free-time-block" class="section">
+            <div id="homepage-free-time-hero" class="hero is-small is-primary block">
+                <div class="hero-body">
+                    <h2 class="title is-2">Prosti čas</h2>
+                </div>
+            </div>
+            <div class="tags card">
+                <div class="card-content">
+                    {{ range $activity := .Site.Data.free_time }}
+                    <button id="homepage-free-time-tag"
+                        class="button is-medium has-tooltip-multiline has-tooltip-top has-tooltip-light"
+                        data-tooltip="{{ $activity.description }}">{{ $activity.title }}</button>
+                    {{ end }}
+                </div>
+            </div>
+        </section>
 
+        <section id="homepage-skills-block" class="section">
+            <div class="hero is-small is-primary block">
+                <div class="hero-body">
+                    <h2 class="title is-2">Sposobnosti in spretnosti</h2>
+                </div>
+            </div>
+
+            <div id="-card" class="card block">
+                <div class="card-content">
+                    <h3 class="title is-3">Programski jeziki in ogrodja</h3>
+                </div>
+                {{ partial "skills/card-content" (sort .Site.Data.skills.programming_languages "title" "asc") }}
+            </div>
+
+            <div id="-card" class="card block">
+                <div class="card-content">
+                    <h3 class="title is-3">Orodja</h3>
+                </div>
+                {{ partial "skills/card-content" (sort .Site.Data.skills.tools "title" "asc") }}
+            </div>
+
+            <div id="-card" class="card block">
+                <div class="card-content">
+                    <h3 class="title is-3">Jeziki</h3>
+                </div>
+                {{ partial "skills/card-content" (sort .Site.Data.skills.languages "title" "asc") }}
+            </div>
+        </section>
+
+    </div>
+</div>
 {{ end }}
