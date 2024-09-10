@@ -2,16 +2,17 @@
 
 {{ define "main" }}
 
-<section id="homepage-hero-banner" class="hero is-info is-fullheight" style="background-image: url('/images/landscape_banner.jpg');">
+<section id="homepage-hero-banner" class="hero is-info is-fullheight"
+    style="background-image: url('/images/landscape_banner.jpg');">
     <div class="hero-body">
         <div class="container block">
-            <div class="columns is-centered">
-                <div class="column is-2-tablet has-text-right has-background-primary">
-                    <h1 class="title is-1">Nik Erzetič</h1>
-                    <p class="subtitle">Filozof in umetnik po duši, matematik po izobrazbi.</p>
+            <div id="homepage-hero-columns" class="columns is-centered has-text-centered-mobile">
+                <div class="column is-3-tablet is-2-desktop has-text-right-tablet">
+                    <h1 id="homepage-hero-title" class="title is-1">Nik Erzetič</h1>
+                    <p id="homepage-hero-subtitle" class="subtitle">Filozof in umetnik po duši, matematik po izobrazbi.</p>
                 </div>
-                <div class="column is-2-tablet has-background-primary">
-                    <figure class="image is-128x128">
+                <div class="column is-3-tablet is-2-desktop">
+                    <figure id="homepage-hero-portrait" class="image is-128x128">
                         {{ with resources.Get "images/portrait_me.jpg" }}
                         <img class="is-rounded" src="{{ .RelPermalink }}" alt="A portrait of me." />
                         {{ end }}

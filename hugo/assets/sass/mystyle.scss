@@ -1,39 +1,5 @@
 @charset "utf-8";
 
-body {
-  background-image: url("https://img.freepik.com/premium-photo/seamless-marble-texture-high-resolution-decoration_563241-1583.jpg");
-  // background-image: url("https://image.freepik.com/free-photo/seamless-pattern-with-watercolor-hand-painted-abstract-texture_100956-149.jpg");
-  // background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/seamless-pattern-oriental-ornamental-watercolor-texture-luxury-style-wallpapers-textile-interior-design-golden-grey-green-julien.jpg");
-  // background-size: 450px 390px;
-  // background-image: url("https://c4.wallpaperflare.com/wallpaper/276/381/148/flowers-background-pattern-vector-wallpaper-preview.jpg");
-  // background-image: url("https://img.freepik.com/premium-photo/seamless-marble-texture-high-resolution-decoration_563241-1580.jpg");
-  // background-image: url("https://img.freepik.com/premium-photo/seamless-marble-texture-high-resolution-decoration_563241-1542.jpg");
-  // background-image: url("https://img.freepik.com/premium-photo/seamless-marble-texture_664601-11790.jpg");
-  // background-image: url("https://img.freepik.com/premium-photo/seamless-marble-texture_664601-11794.jpg");
-  // background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.goodtextures.com%2Fcache%2F1c11869c%2Favce167bc5300a7585f29.jpg&f=1&nofb=1&ipt=a7fc9e3b6d644d72cbf80e5e59c5c0bf87bc30beae486adde7d2be0d488baa2c&ipo=images");
-  // background-image: url("https://www.3dxo.com/images/textures/l/wm_marble125_1024.png");
-  // background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F023%2F188%2F176%2Fnon_2x%2Fabstract-luxury-marble-seamless-texture-background-3d-illustration-of-marbling-in-black-and-gold-color-with-glitter-effect-generative-ai-free-photo.jpg&f=1&nofb=1&ipt=a1b4c5be7d2911a338c9aeb79a5bebe1510ae7aeb7dbe67e435770781dd92302&ipo=images");
-  // background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstorage.googleapis.com%2Fwebdesignledger.pub.network%2FLaT%2Fedd%2F2016%2F02%2Fseamless-background-textures-23.jpg&f=1&nofb=1&ipt=975b197b70e3c71e2088bc4f33268c6da08b826f84191ccb480fe0139e3c3bfe&ipo=images");
-  // background-image: url("https://4.bp.blogspot.com/-5xNMmxVjWKg/UA5bNp_0jaI/AAAAAAAAB4s/QXcwBUUPPKw/s1600/Seamless+wall+white+paint+stucco+plaster+texture.jpg");
-  // background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcmkt-image-prd.freetls.fastly.net%2F0.1.0%2Fps%2F363394%2F2048%2F2048%2Fm1%2Ffpnw%2Fwm0%2Fstucco-blue-wall-seamless-texture-feb_2015-2048x2048-.jpg%3F1424354337%26s%3D02cad1d70d6e10c66cb27f7fcf62c9f7&f=1&nofb=1&ipt=c520fde24527b737fa2a4cafa8a9cea501e559e3b650a5f252540fcb65d52791&ipo=images");
-  // background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Ftileable-fabric-texture-seamless_662214-2653.jpg&f=1&nofb=1&ipt=99a7fe5af8cab8e75fbd02d0b0f9cc6b4b2c5a1d1ed625ab1d1a9aefbc808372&ipo=images");
-  background-repeat: repeat;
-  // background-size: 400px 400px;
-  background-size: 500px 500px;
-  // background-size: contain;
-}
-
-#homepage-hero-banner {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#footer-outside-links {
-  .button {
-    text-decoration: none;
-  }
-}
-
 // Set your brand colors
 $purple: #8a4d76;
 $pink: #fa7c91;
@@ -72,9 +38,10 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
-// Remove underline from navbar links
-.navbar-item {
-  text-decoration: none;
+body {
+  background-image: url("https://img.freepik.com/premium-photo/seamless-marble-texture-high-resolution-decoration_563241-1583.jpg");
+  background-repeat: repeat;
+  background-size: 500px 500px;
 }
 
 // Import only what you need from Bulma
@@ -93,3 +60,52 @@ $input-shadow: none;
 // Bulma extensions
 $tooltip-font-size: $size-6;
 @import "../../../bulma-tooltip/src/sass/index.sass";
+
+#homepage-hero-columns {
+  .column {
+    background-color: $primary;
+  }
+}
+
+// This ensures different behavior for smaller devices than tablet
+@media only screen and (max-width: $tablet) {
+  #homepage-hero-columns {
+    .column {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+  #homepage-hero-title {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #homepage-hero-subtitle {
+    background-color: $primary;
+  }
+  #homepage-hero-portrait {
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#homepage-hero-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+#footer-outside-links {
+  .button {
+    text-decoration: none;
+  }
+}
+
+// Remove underline from navbar links
+.navbar-item {
+  text-decoration: none;
+}
