@@ -1,12 +1,12 @@
-- title: Magister Matematike
+- title: Magister matematike
   id: magister-matematike
   date: 2023-07-13T21:36:49+02:00
   draft: false
   establishment: Fakulteta za matematiko in fiziko, Univerza v Ljubljani
   from: 2021
-  to:
-  description: Magisterski program matematike, v katerega sem trenutno vpisan.
-- title: Diplomirani Matematik
+  to: 2024
+  description: Magisterski program matematike. Zaključno nalogo z naslovom Priporočilni sistem za pisanje programske kode sem napisal pod mentorstvom prof. dr. Ljupčom Todorovskim.
+- title: Diplomirani matematik
   id: diplomirani-matematik
   date: 2023-07-13T21:35:24+02:00
   draft: false

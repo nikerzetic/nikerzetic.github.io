@@ -1,10 +1,16 @@
+- title: Raziskovalec, programer
+  id: aflabs-programer-raziskovalec
+  employer: AFLabs d.o.o.
+  from: 2025
+  to: 
+  description: Trenutna zaposlitev.
 - title: Vodja programerskega kluba
   id: vodja-programerskega-kluba
   employer: Abelium d.o.o.
   from: 2022
   to: 2023
   description: V drugem letniku magisterija sem prevzel vodenje programerskega kluba na Fakulteti za matematiko in fiziko Univerze v Ljubljani. Pred tem se je klub srečal le nekajkrat in sporadično; z mojim prevzemom vodstva smo se začeli srečevati redno, enkrat na tede. Skrbel sem za vodenje projektov in organiziranje delovnih skupin. Organiziral sem tedenska srečanja, naročal pice zanje in vzdrževal tedenske zapisnike. Sodeloval sem tudi pri organizaciji "Programerskega vikenda" v Plemljevi vili na Bledu.
-- title: Receptor v Igralnici
+- title: Receptor v igralnici
   id: receptor-v-igralnici
   employer: HIT d.d., Nova Gorica
   from: 2017
